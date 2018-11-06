@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
 
 public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListenerInterface
 {
 	// GUI Text to display the gesture messages.
-	public GUIText GestureInfo;
+	public Text GestureInfo;
 	
 	// private bool to track if progress message has been displayed
 	private bool progressDisplayed;
