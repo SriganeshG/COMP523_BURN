@@ -633,7 +633,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381464839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.94, y: 4.18, z: 0}
+  m_LocalPosition: {x: -9, y: 4.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1147,7 +1147,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1742110cdc4617c4c9e5f220fbb26a9f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1742110cdc4617c4c9e5f220fbb26a9f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   CalibrationText: {fileID: 938294320}
   HandCursor1: {fileID: 925132061}
   HandCursor2: {fileID: 0}
-  ControlMouseCursor: 1
+  ControlMouseCursor: 0
   GesturesDebugText: {fileID: 1213951732}
 --- !u!114 &999714153
 MonoBehaviour:
@@ -1399,7 +1399,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gestureInfo: {fileID: 1014896634}
-  jupiter: {fileID: 0}
+  mercury: {fileID: 1724277060}
+  mars: {fileID: 222539347}
+  venus: {fileID: 360828946}
+  earth: {fileID: 677121087}
+  jupiter: {fileID: 381464839}
+  saturn: {fileID: 2016857180}
+  neptune: {fileID: 1118517738}
+  uranus: {fileID: 37024221}
+  pluto: {fileID: 1794978001}
+  spaceship: {fileID: 925132061}
 --- !u!1 &1007327208
 GameObject:
   m_ObjectHideFlags: 0

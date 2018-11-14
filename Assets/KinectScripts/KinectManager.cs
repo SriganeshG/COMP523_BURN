@@ -186,17 +186,6 @@ public class KinectManager : MonoBehaviour
 	private BoneOrientationsConstraint boneConstraintsFilter;
 	private SelfIntersectionConstraint selfIntersectionConstraint;
 
-	//planets
-	public GameObject mercury
-	public GameObject mars
-	public GameObject venus
-	public GameObject earth
-	public GameObject jupiter
-	public GameObject saturn
-	public GameObject neptune
-	public GameObject uranus
-	public GameObject pluto
-
 	// returns the single KinectManager instance
     public static KinectManager Instance
     {
@@ -1243,7 +1232,6 @@ public class KinectManager : MonoBehaviour
 					{
 						if(gestureData.gesture == KinectGestures.Gestures.Click)
 						{
-							if ()
 							if(ControlMouseCursor)
 							{
 								MouseControl.MouseClick();

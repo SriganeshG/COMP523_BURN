@@ -7,11 +7,25 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 {
 	// GUI Text to display the gesture messages.
 	public Text gestureInfo;
+
+	//planets
+	public GameObject mercury;
+	public GameObject mars;
+	public GameObject venus;
+	public GameObject earth;
 	public GameObject jupiter;
+	public GameObject saturn;
+	public GameObject neptune;
+	public GameObject uranus;
+	public GameObject pluto;
+
+	public GameObject spaceship;
 
 	// private bool to track if progress message has been displayed
 	private bool progressDisplayed;
 
+	private bool planetClicked = false;
+	private GameObject selectedPlanet;
 
 	public void UserDetected(uint userId, int userIndex)
 	{
@@ -76,7 +90,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 		string sGestureText = gesture + " detected";
 		if(gesture == KinectGestures.Gestures.Click)
         {
-						vCursorPos = Camera.main.ViewportToWorldPoint(vCursorPos);
+						planetClicked = !planetClicked;
 
             sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
         }
@@ -110,8 +124,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	}
 
 	void Update() {
-		if(jupiter.clicked == true) {
-			jupiter.
+		if (planetClicked == true) {
+			jupiter.transform.position = spaceship.transform.position;
 		}
 	}
 }
