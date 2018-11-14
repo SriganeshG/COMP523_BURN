@@ -75,11 +75,18 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	{
 		string sGestureText = gesture + " detected";
 		if(gesture == KinectGestures.Gestures.Click)
+        {
+            sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
+            MouseControl.MouseClick();
+        }
 
-			sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
+			
 
 		if(gestureInfo != null)
-			gestureInfo.text = sGestureText;
+        {
+            gestureInfo.text = sGestureText;
+        }
+			
 
 		progressDisplayed = false;
 
