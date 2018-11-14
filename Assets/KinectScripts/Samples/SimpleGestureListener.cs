@@ -7,7 +7,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 {
 	// GUI Text to display the gesture messages.
 	public Text gestureInfo;
-	public GameObject venus;
+	public GameObject jupiter;
 
 	// private bool to track if progress message has been displayed
 	private bool progressDisplayed;
@@ -76,17 +76,18 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 		string sGestureText = gesture + " detected";
 		if(gesture == KinectGestures.Gestures.Click)
         {
+						vCursorPos = Camera.main.ViewportToWorldPoint(vCursorPos);
+
             sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
-            MouseControl.MouseClick();
         }
 
-			
+
 
 		if(gestureInfo != null)
         {
             gestureInfo.text = sGestureText;
         }
-			
+
 
 		progressDisplayed = false;
 
@@ -108,4 +109,9 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 		return true;
 	}
 
+	void Update() {
+		if(jupiter.clicked == true) {
+			jupiter.
+		}
+	}
 }
