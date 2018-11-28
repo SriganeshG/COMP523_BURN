@@ -90,7 +90,16 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 		string sGestureText = gesture + " detected";
 		if(gesture == KinectGestures.Gestures.Click)
         {
-						planetClicked = !planetClicked;
+						if (planetClicked) {
+							planetClicked = false;
+							selectedPlanet = null;
+						}
+
+						if (!planetClicked) {
+							//raycast stuff
+							//if it hits, set planetClicked to true
+							//set selectedPlanet to hit planet
+						}
 
             sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
         }
@@ -124,8 +133,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	}
 
 	void Update() {
-		if (planetClicked == true) {
-			jupiter.transform.position = spaceship.transform.position;
+		if (planetClicked == true && selectedPlanet) {
+			selectedPlanet.transform.position = spaceship.transform.position;
 		}
 	}
 }

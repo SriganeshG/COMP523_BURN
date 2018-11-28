@@ -1,8 +1,7 @@
 using UnityEngine;
-using System.Collections.Generic;
 using System.Collections;
 
-public class KinectOverlayer : MonoBehaviour
+public class KinectOverlayer : MonoBehaviour 
 {
 //	public Vector3 TopLeft;
 //	public Vector3 TopRight;
@@ -12,21 +11,17 @@ public class KinectOverlayer : MonoBehaviour
 	public GUITexture backgroundImage;
 	public KinectWrapper.NuiSkeletonPositionIndex TrackedJoint = KinectWrapper.NuiSkeletonPositionIndex.HandRight;
 	public GameObject OverlayObject;
-    private Vector3 objectStartPos;
 	public float smoothFactor = 5f;
 	
 	public GUIText debugText;
 
 	private float distanceToCamera = 10f;
 
-    public List<KinectGestures.Gestures> Player1Gestures;
-    private List<KinectGestures.GestureData> player1Gestures = new List<KinectGestures.GestureData>();
 
-    void Start()
+	void Start()
 	{
 		if(OverlayObject)
 		{
-            objectStartPos = OverlayObject.transform.position;
 			distanceToCamera = (OverlayObject.transform.position - Camera.main.transform.position).magnitude;
 		}
 	}
@@ -80,9 +75,6 @@ public class KinectOverlayer : MonoBehaviour
 						{
 							Vector3 vPosOverlay = Camera.main.ViewportToWorldPoint(new Vector3(scaleX, scaleY, distanceToCamera));
 							OverlayObject.transform.position = Vector3.Lerp(OverlayObject.transform.position, vPosOverlay, smoothFactor * Time.deltaTime);
-
-                            //if (manager.IsGestureDetected(manager.GetPlayer1ID, KinectGestures.Gestures.Click)) { }
-                            
 						}
 					}
 				}
