@@ -98,10 +98,12 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 
             if (!planetClicked)
             {
-                Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
+                Vector2 rayPos = new Vector2(Camera.main.ScreenToWorldPoint(spaceship.transform.position).x, Camera.main.ScreenToWorldPoint(spaceship.transform.position).y);
                 RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
                 if (hit)
                 {
+                    Debug.Log(hit.transform.name);
+                    Debug.Log(hit.transform.gameObject.tag);
                     planetClicked = true;
                     selectedPlanet = hit.transform.gameObject;
                 }
