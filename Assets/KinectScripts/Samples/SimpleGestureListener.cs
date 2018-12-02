@@ -90,30 +90,43 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
         string sGestureText = gesture + " detected";
         if (gesture == KinectGestures.Gestures.Click)
         {
-            //toggle selection
-            if (planetClicked)
+
+            switch (planetClicked)
             {
-                planetClicked = false;
-                selectedPlanet = null;
+                case true:
+                    planetClicked = false;
+                    selectedPlanet = null;
+                    break;
+                case false:
+                    Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
+                    RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+                    if (hit)
+                    {
+                        Debug.Log(hit.transform.name);
+                        Debug.Log(hit.transform.gameObject.tag);
+                        planetClicked = true;
+                        selectedPlanet = hit.transform.gameObject;
+                    }
+                    break;
             }
 
-            if (planetClicked==false)
-            {
-                //raycast stuff
-                //if it hits, set planetClicked to true
-                //set selectedPlanet to hit planet
+            //if (planetClicked == false)
+            //{
+            //    //raycast stuff
+            //    //if it hits, set planetClicked to true
+            //    //set selectedPlanet to hit planet
 
-                Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
-                RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
-                if (hit)
-                {
-                    Debug.Log(hit.transform.name);
-                    Debug.Log(hit.transform.gameObject.tag);
-                    planetClicked = true;
-                    selectedPlanet = hit.transform.gameObject;
-                }
-                
-            }
+            //    Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
+            //    RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+            //    if (hit)
+            //    {
+            //        Debug.Log(hit.transform.name);
+            //        Debug.Log(hit.transform.gameObject.tag);
+            //        planetClicked = true;
+            //        selectedPlanet = hit.transform.gameObject;
+            //    }
+
+            //}
 
             sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
         }
@@ -148,7 +161,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 
     void Update()
     {
-        if (planetClicked == true && selectedPlanet)
+        if (planetClicked == true && selectedPlanet != null)
         {
             selectedPlanet.transform.position = spaceship.transform.position;
         }
