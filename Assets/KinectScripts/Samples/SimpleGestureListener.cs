@@ -90,15 +90,20 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
         string sGestureText = gesture + " detected";
         if (gesture == KinectGestures.Gestures.Click)
         {
+            //toggle selection
             if (planetClicked)
             {
                 planetClicked = false;
                 selectedPlanet = null;
             }
 
-            if (!planetClicked)
+            if (planetClicked==false)
             {
-                Vector2 rayPos = new Vector2(Camera.main.ScreenToWorldPoint(spaceship.transform.position).x, Camera.main.ScreenToWorldPoint(spaceship.transform.position).y);
+                //raycast stuff
+                //if it hits, set planetClicked to true
+                //set selectedPlanet to hit planet
+
+                Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
                 RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
                 if (hit)
                 {
@@ -107,9 +112,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
                     planetClicked = true;
                     selectedPlanet = hit.transform.gameObject;
                 }
-                //raycast stuff
-                //if it hits, set planetClicked to true
-                //set selectedPlanet to hit planet
+                
             }
 
             sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
