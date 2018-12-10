@@ -18,6 +18,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
     public GameObject neptune;
     public GameObject uranus;
     public GameObject pluto;
+    public GameObject hand;
 
     public GameObject spaceship;
 
@@ -90,7 +91,6 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
         string sGestureText = gesture + " detected";
         if (gesture == KinectGestures.Gestures.Click)
         {
-
             switch (planetClicked)
             {
                 case true:
@@ -102,33 +102,30 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
                     RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
                     if (hit)
                     {
-                        Debug.Log(hit.transform.name);
-                        Debug.Log(hit.transform.gameObject.tag);
+                      Debug.Log(hit.transform.name);
+                      Debug.Log(hit.transform.gameObject.tag);
+
+                      if (hit.transform.gameObject.tag == 'hand') {
+                        switch (KinectManager.RightHandCursor == spaceship)
+                        {
+                            case true:
+                              KinectManager.RightHandCursor == null;
+                              KinectManager.LeftHandCursor == spaceship;
+                              break;
+                            case false:
+                              KinectManager.LeftHandCursor == null;
+                              KinectManager.RightHandCursor == spaceship;
+                        }
+                      }
+                      else {
                         planetClicked = true;
                         selectedPlanet = hit.transform.gameObject;
+
+                        string sGestureText = selectedPlanet.tag + " captured";
+                      }
                     }
                     break;
             }
-
-            //if (planetClicked == false)
-            //{
-            //    //raycast stuff
-            //    //if it hits, set planetClicked to true
-            //    //set selectedPlanet to hit planet
-
-            //    Vector2 rayPos = new Vector2(spaceship.transform.position.x, spaceship.transform.position.y);
-            //    RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
-            //    if (hit)
-            //    {
-            //        Debug.Log(hit.transform.name);
-            //        Debug.Log(hit.transform.gameObject.tag);
-            //        planetClicked = true;
-            //        selectedPlanet = hit.transform.gameObject;
-            //    }
-
-            //}
-
-            sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
         }
 
 
