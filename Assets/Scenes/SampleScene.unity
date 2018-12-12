@@ -117,6 +117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 154219192}
   - component: {fileID: 154219191}
+  - component: {fileID: 154219193}
+  - component: {fileID: 154219194}
   m_Layer: 0
   m_Name: NeptuneEnd
   m_TagString: Untagged
@@ -153,8 +155,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -178,6 +180,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154219193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154219190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690499a9d163b2d419c1b98da92caa75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeptuneEnd: {fileID: 154219190}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &154219194
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 154219190}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &157908121
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +227,8 @@ GameObject:
   m_Component:
   - component: {fileID: 157908123}
   - component: {fileID: 157908122}
+  - component: {fileID: 157908124}
+  - component: {fileID: 157908125}
   m_Layer: 0
   m_Name: SaturnEnd
   m_TagString: Untagged
@@ -223,8 +265,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -248,6 +290,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157908124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157908121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003e76fcb2fce674d99b7525e1a40b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaturnEnd: {fileID: 157908121}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &157908125
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157908121}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &219835839
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 219835841}
   - component: {fileID: 219835840}
+  - component: {fileID: 219835842}
+  - component: {fileID: 219835843}
   m_Layer: 0
   m_Name: JupiterEnd
   m_TagString: Untagged
@@ -293,8 +375,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -312,12 +394,50 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 219835839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: -0.9, z: 1}
+  m_LocalPosition: {x: 0.8, y: -0.9, z: 1}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &219835842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219835839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceefbeecd4e73264abc82c48454a4b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JupiterEnd: {fileID: 219835839}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &219835843
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219835839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &230574632
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +447,8 @@ GameObject:
   m_Component:
   - component: {fileID: 230574634}
   - component: {fileID: 230574633}
+  - component: {fileID: 230574635}
+  - component: {fileID: 230574636}
   m_Layer: 0
   m_Name: MarsEnd
   m_TagString: Untagged
@@ -363,8 +485,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -382,12 +504,50 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230574632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: -0.9, z: 1}
+  m_LocalPosition: {x: -4, y: -0.9, z: 1}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230574635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230574632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af9026aeaa52394d9e5fd0496e09e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarsEnd: {fileID: 230574632}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &230574636
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230574632}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &255678658
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +557,8 @@ GameObject:
   m_Component:
   - component: {fileID: 255678660}
   - component: {fileID: 255678659}
+  - component: {fileID: 255678661}
+  - component: {fileID: 255678662}
   m_Layer: 0
   m_Name: UranusEnd
   m_TagString: Untagged
@@ -433,8 +595,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -458,6 +620,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &255678661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255678658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b865769c00fac246b4ae36cf4e5ce6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UranusEnd: {fileID: 255678658}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &255678662
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255678658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &332764873
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +669,7 @@ GameObject:
   - component: {fileID: 332764874}
   - component: {fileID: 332764876}
   - component: {fileID: 332764877}
+  - component: {fileID: 332764878}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Venus
@@ -505,8 +706,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 678e06a7adf9bc846ab6bc8c39c4d845, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -565,6 +766,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.56
+--- !u!114 &332764878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332764873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &431037301
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +823,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 171289e4cd8588d459c645a120a1cd65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -683,6 +896,7 @@ MonoBehaviour:
   uranus: {fileID: 628546864}
   pluto: {fileID: 1424502090}
   spaceship: {fileID: 431037301}
+  selectedPlanet: {fileID: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -786,6 +1000,7 @@ GameObject:
   - component: {fileID: 628546865}
   - component: {fileID: 628546867}
   - component: {fileID: 628546868}
+  - component: {fileID: 628546869}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Uranus
@@ -822,8 +1037,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fd8746a370b6f764a85fb4824f0b9e5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -882,6 +1097,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &628546869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628546864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &756602836
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +1120,7 @@ GameObject:
   - component: {fileID: 756602837}
   - component: {fileID: 756602839}
   - component: {fileID: 756602840}
+  - component: {fileID: 756602841}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Mars
@@ -929,8 +1157,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff566d114c5c8794e8158dc14cf11393, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -989,6 +1217,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6.825
+--- !u!114 &756602841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756602836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &772186405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1302,7 @@ GameObject:
   - component: {fileID: 940522817}
   - component: {fileID: 940522819}
   - component: {fileID: 940522820}
+  - component: {fileID: 940522821}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Jupiter
@@ -1098,8 +1339,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6385998982489864f8934f5660e75dd1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1158,6 +1399,18 @@ CircleCollider2D:
   m_Offset: {x: -0.07799748, y: 0}
   serializedVersion: 2
   m_Radius: 4.9220014
+--- !u!114 &940522821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940522816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &1105563918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1474,7 @@ GameObject:
   - component: {fileID: 1110632673}
   - component: {fileID: 1110632675}
   - component: {fileID: 1110632676}
+  - component: {fileID: 1110632677}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Saturn
@@ -1257,8 +1511,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2cdcaca7bcfadef49a4be1bb55e9f95d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1942,6 +2196,18 @@ PolygonCollider2D:
       - {x: 5.17, y: 1.8299999}
       - {x: 5.17, y: 1.9399999}
       - {x: 5.04, y: 2.04}
+--- !u!114 &1110632677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1110632672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &1297871047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,7 +2280,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 115461963
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1297871051
@@ -2028,6 +2294,7 @@ RectTransform:
   m_LocalScale: {x: 0.018484289, y: 0.018484289, z: 0.018484289}
   m_Children:
   - {fileID: 1721706150}
+  - {fileID: 1353532568}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2081,8 +2348,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1633480621
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0f49d55401e93c344aec3cf5586053df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2106,6 +2373,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1353532567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1353532568}
+  - component: {fileID: 1353532570}
+  - component: {fileID: 1353532569}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1353532568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353532567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1297871051}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -856, y: 495}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1353532569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353532567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '0
+
+'
+--- !u!222 &1353532570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353532567}
 --- !u!1 &1424502090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2460,7 @@ GameObject:
   - component: {fileID: 1424502091}
   - component: {fileID: 1424502093}
   - component: {fileID: 1424502094}
+  - component: {fileID: 1424502095}
   m_Layer: 0
   m_Name: Pluto
   m_TagString: Pluto
@@ -2153,8 +2497,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3f90a0216b94cee4a83c50a251d3d750, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2213,6 +2557,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.56
+--- !u!114 &1424502095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424502090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &1525746940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2630,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1682704238}
   - component: {fileID: 1682704237}
+  - component: {fileID: 1682704239}
+  - component: {fileID: 1682704240}
   m_Layer: 0
   m_Name: PlutoEnd
   m_TagString: Untagged
@@ -2310,8 +2668,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -2335,6 +2693,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682704239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682704236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ea3c2243694354eb9449c7a1587449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlutoEnd: {fileID: 1682704236}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &1682704240
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682704236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1721706149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,7 +2763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -94.2}
+  m_AnchoredPosition: {x: 0.0000019073, y: -291}
   m_SizeDelta: {x: 456.26, y: 85.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721706151
@@ -2418,6 +2814,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1730949069}
   - component: {fileID: 1730949068}
+  - component: {fileID: 1730949070}
+  - component: {fileID: 1730949071}
   m_Layer: 0
   m_Name: VenusEnd
   m_TagString: Untagged
@@ -2454,8 +2852,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -2473,12 +2871,50 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1730949067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.4, y: -0.9, z: 1}
+  m_LocalPosition: {x: -10.79, y: -0.9, z: 1}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730949070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730949067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d4e3007a62f744392713aacc4cd468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VenusEnd: {fileID: 1730949067}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &1730949071
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730949067}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1755379733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,6 +2924,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1755379735}
   - component: {fileID: 1755379734}
+  - component: {fileID: 1755379736}
+  - component: {fileID: 1755379737}
   m_Layer: 0
   m_Name: EarthEnd
   m_TagString: Untagged
@@ -2524,8 +2962,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -2543,12 +2981,50 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755379733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: -0.9, z: 1}
+  m_LocalPosition: {x: -7.37, y: -0.9, z: 1}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1755379736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755379733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd00092b0cfaed4fb274e00d2d4efce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EarthEnd: {fileID: 1755379733}
+  scoreText: {fileID: 1353532569}
+--- !u!61 &1755379737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755379733}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16}
+  m_EdgeRadius: 0
 --- !u!1 &1798605504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,6 +3036,7 @@ GameObject:
   - component: {fileID: 1798605505}
   - component: {fileID: 1798605507}
   - component: {fileID: 1798605508}
+  - component: {fileID: 1798605509}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Neptune
@@ -2596,8 +3073,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 86f1f265d0c32fe43bb2e8af3a5af8af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2656,6 +3133,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.5
+--- !u!114 &1798605509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1798605504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &2007159307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,6 +3156,7 @@ GameObject:
   - component: {fileID: 2007159308}
   - component: {fileID: 2007159310}
   - component: {fileID: 2007159311}
+  - component: {fileID: 2007159312}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Earth
@@ -2703,8 +3193,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 13f338dfdf00efa4cb49be591ad4d206, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2763,6 +3253,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 6.75
+--- !u!114 &2007159312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2007159307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &2025342411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +3276,7 @@ GameObject:
   - component: {fileID: 2025342412}
   - component: {fileID: 2025342414}
   - component: {fileID: 2025342415}
+  - component: {fileID: 2025342416}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Mercury
@@ -2810,8 +3313,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 115461963
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b88a97dffad48474185b7bb816d435f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2870,6 +3373,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.5599997
+--- !u!114 &2025342416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025342411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f725b874b7439544bb2b905fae447696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctlyPlaced: 0
 --- !u!1 &2089243020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,8 +3432,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -208818195
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
@@ -2936,7 +3451,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089243020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.7, y: -0.9, z: 1}
+  m_LocalPosition: {x: -14.65, y: -0.9, z: 1}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2975,6 +3490,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2089243020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9f141787a0708449b96a24392dfc35, type: 3}
+  m_Script: {fileID: 11500000, guid: f87459054f03d6b48a2d05ae05dd6e18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MercuryEnd: {fileID: 2089243020}
+  scoreText: {fileID: 1353532569}

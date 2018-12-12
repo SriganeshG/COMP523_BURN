@@ -25,7 +25,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	private bool progressDisplayed;
 
 	private bool planetClicked = false;
-	private GameObject selectedPlanet;
+	public GameObject selectedPlanet;
+	private correctlyPlacedScript correctlyPlaced;
 
 	public void UserDetected(uint userId, int userIndex)
 	{
@@ -70,7 +71,10 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 			switch (planetClicked)
 			{
 			case true:
-				sGestureText = selectedPlanet.tag + " deposited.";
+				if (correctlyPlaced.correctlyPlaced == false){
+					sGestureText = selectedPlanet.tag + " deposited.";
+				}
+
 
 				planetClicked = false;
 				selectedPlanet = null;
@@ -85,7 +89,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 					Debug.Log(hit.transform.gameObject.tag);
 					planetClicked = true;
 					selectedPlanet = hit.transform.gameObject;
-
+					correctlyPlaced = selectedPlanet.GetComponent <correctlyPlacedScript>();
 					sGestureText = selectedPlanet.tag + " captured";
 				}
 				break;
@@ -121,7 +125,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 
 	void Update()
 	{
-		if (planetClicked == true && selectedPlanet != null)
+		
+		if (planetClicked == true && selectedPlanet != null && correctlyPlaced.correctlyPlaced != true)
 		{
 			selectedPlanet.transform.position = spaceship.transform.position;
 		}
